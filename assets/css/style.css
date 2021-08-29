@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  height: 100vh;
+}
+
+header {
+  height: 30vh;
+}
+
+.nav_part {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7rem;
+  font-size: 1.5rem;
+}
+
+.para_content {
+  align-self: center;
+}
+
+.head_part {
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.number {
+  background-color: #eee;
+  color: #222;
+  display: inline-block;
+  width: 15rem;
+  font-size: 6rem;
+  padding: 3rem 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+span hr {
+  margin-top: 2.5rem;
+  height: 1rem;
+  background-color: #eee;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.guess {
+  width: 25rem;
+  margin: auto;
+  background-color: #222;
+  padding: 2.5rem;
+  font-size: 5rem;
+  display: block;
+  border: 0.6rem solid #eee;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #eee;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.check {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.left {
+  width: 50rem;
+}
+
+.right {
+  font-size: 2rem;
+  width: 50rem;
+}
+
+.message {
+  margin-bottom: 7rem;
+  margin-top: 2.3rem;
+}
+
+.score_label {
+  margin-bottom: 2rem;
+}
+
+.highscore_label {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+
+  header {
+    height: 40vh;
+  }
+
+  .nav_part {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1.7rem;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 35px;
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 55vh;
+  }
+
+  .left {
+    order: 2;
+  }
+
+  .guess {
+    width: 35rem;
+    height: 15rem;
+    font-size: 7rem;
+  }
+
+  .number {
+    width: 25rem;
+    font-size: 7rem;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .message {
+    margin-top: 2.3rem;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    height: 40vh;
+  }
+
+  .nav_part {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1.7rem;
+    font-size: 1.5rem;
+  }
+
+  .para_content {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 35px;
+    margin-bottom: 3rem;
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+  }
+
+  .left {
+    width: 100%;
+    order: 2;
+    margin-top: -100px;
+  }
+
+  .guess {
+    width: 40rem;
+    height: 20rem;
+    font-size: 7rem;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  .number {
+    width: 25rem;
+    margin: auto;
+    font-size: 7rem;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .message {
+    margin-top: 2.3rem;
+    font-weight: bold;
+    font-size: 5rem;
+  }
+
+  .btn {
+    font-size: 2.5rem;
+  }
+}
