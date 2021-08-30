@@ -41,6 +41,8 @@ document.querySelector('.check').addEventListener('click', function(){
         document.querySelector('.number').style.width = '30rem';
         if(score > highscore){
             document.querySelector('.highscore').textContent = score;
+        }else{
+            document.querySelector('.highscore').textContent = highscore;
         }
     } 
     
