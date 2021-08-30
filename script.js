@@ -40,7 +40,8 @@ document.querySelector('.check').addEventListener('click', function(){
         document.querySelector('.number').textContent = number;
         document.querySelector('.number').style.width = '30rem';
         if(score > highscore){
-            document.querySelector('.highscore').textContent = score;
+            highscore = score; 
+            document.querySelector('.highscore').textContent = highscore;
         }else{
             document.querySelector('.highscore').textContent = highscore;
         }
